@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="George Zapata">
+    <meta name="discription" content="java script pay calculator">
+
+    <title>Week 6 | JS Pay Calculator</title>
+</head>
+<body>
+    <h1>Week 6 | Pay Calculator</h1>
+      
+    <!-- In Document Javascript-->
+    <script>
+            //"INPUT" gaining data from Browser pop up
+        var hourlyRate = Number(prompt("Enter your hourly rate: "))
+        var hoursWorked = Number(prompt("Enter how many hours you worked in two weeks"))
+        var grossPay = (hourlyRate * hoursWorked).toFixed(2)
+
+        console.log(`Gross Pay: $${grossPay}`)
+
+        var taxDeduction = (grossPay * .2).toFixed(2)
+
+        console.log(`Uncle Sam's Share: $${taxDeduction}`)
+        
+        var netPay = (grossPay - taxDeduction).toFixed(2)
+
+        console.log(`Net Pay: $${netPay}`)
+
+        alert(`Your Gross Pay is: $${grossPay}\n Your Tax amount is: $${taxDeduction}\n Your Net Pay is: $${netPay}\n`)
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
